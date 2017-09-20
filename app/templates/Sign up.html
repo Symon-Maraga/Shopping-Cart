@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content=type"text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Shopping List | Signup</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="Sign up style.css" type="text/css" />
+<script type="text/javascript"></script>
+</head>
+
+<body>
+
+<nav>
+     <section class="nav-container">
+     	 <aside class="logo">Shopping List</aside>
+     	 <aside class="menu">
+     	 	<div class="menu-content">
+     	 		<i class="fa fa-unlock-alt"></i><a href="#" id="login">Login</a> | <i class="fa fa-user"></i><a href="#">Register</a>
+     	 	</div>
+        <div class="arrow-up"></div>
+     	 </aside>
+     	 <div class="login-form">
+     	 	<form>
+     	 		<label>Fullname</label>
+     	 		<div>
+     	 		    <input type="text" placeholder="fullname" required/>
+     	 		</div>
+     	 		<label>Username</label>
+     	 		<div>
+     	 		    <input type="text" placeholder="username" required/>
+     	 		</div>
+     	 		<label>Email Address</label>
+     	 		<div>
+     	 		    <input type="text" placeholder="E-mail" required/>
+     	 		</div>
+     	 		<label>Password</label>
+     	 		<div>
+     	 			<input type="password" placeholder="Password" required/>
+     	 		</div>
+     	 		<div>
+     	 			<input type="submit" value="Sign Up"/>
+     	 		</div>
+     	 		<div>
+     	 			<a href="#"style="text-decoration:none;position:relative;top:20px;font-size:16px;color:gray;">Already a member? Sign in</a>
+     	 		</div>
+     	 	</form>
+         </div>
+    </section>
+
+</nav>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	var arrow = $(".arrow-up");
+	var form = $(".login-form")
+	var status = false;
+	$("#login").click(function(event){
+		event.preventDefault();
+		alert(0);
+	})
+
+})
+
+
+</script>
+</body>
+</html>
