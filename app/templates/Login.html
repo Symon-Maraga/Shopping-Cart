@@ -6,7 +6,9 @@
 <title>Shopping List</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<link rel="stylesheet" href="login style.css" type="text/css" />
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='loginstyle.css') }}">
+<link rel="stylesheet" href="loginstyle.css" type="text/css" />
+
 <script type="text/javascript"></script>
 </head>
 
@@ -14,10 +16,15 @@
 
 <nav>
      <section class="nav-container">
-     	 <aside class="logo">Shopping List | Login</aside>
+     	 <aside class="logo">
+            <a href="{{ url_for('dashboard') }}">Shopping List | Home</a>
+        </aside>
      	 <aside class="menu">
      	 	<div class="menu-content">
-     	 		<i class="fa fa-unlock-alt"></i><a href="#" id="login">Login</a> | <i class="fa fa-user"></i><a href="#">Register</a>
+     	 		<i class="fa fa-unlock-alt"></i>
+                <a href="{{ url_for('login') }}">Log in</a> | <i class="fa fa-user"></i>
+
+                <a href="{{ url_for('signup') }}">Register</a>
      	 	</div>
         <div class="arrow-up"></div>
      	 </aside>
