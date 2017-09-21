@@ -12,9 +12,19 @@ from app import app
 
 
 @app.route('/login')
-def index():
+def login():
 	session['user'] = 'Symon'
-	return render_template('Login.html')
+	return render_template('login.html')
+
+@app.route('/')
+def dashboard():
+	session['user'] = 'Symon'
+	return render_template('dashboard.html')	
+
+@app.route('/signup')
+def signup():
+	session['user'] = 'Symon'
+	return render_template('signup.html')
 
 @app.route('/getsession')
 def getsession():
